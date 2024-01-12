@@ -1,0 +1,345 @@
+@media(max-width: 850px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        background-color: white;
+    }
+    .banner {
+        height: 75vh;
+        width: 100vw;
+        position: relative;
+    }
+    .banner-content {
+        padding: 20vh 10vh 0 0;
+        line-height: 50px;
+        width: 100vw;
+        text-align: end;
+        color: white;
+        background-color: transparent;
+    }
+    .btn-main {
+        height: 6vh;
+        width: 40vw;
+        background-color: transparent;
+        border: 1px solid green;
+        border-radius: 30px;
+        margin-top: 45px;
+        cursor: pointer;
+    }
+    
+    
+    
+        /* this is the section of adventure */
+    .adventure{
+        background-color: rgb(249, 248, 248);
+        color: black;
+        height: auto;
+    }
+    .second-three{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0px 0 0px;
+    }
+    .first-three {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-inner img {
+        width: 72vw;
+        margin: 0 0 15px 0;
+        height: 35vh;
+        padding: 0 0px 0 0;
+    }
+    .box-inner {
+        height: auto;
+        width: 91vw;
+        background-color: rgba(255, 255, 255, 0.948);
+        box-shadow: 0px 0px 9px 3px rgb(148 146 146);
+        padding: 0 43px;
+    }
+    .btn2{
+        height: 4vh;
+        width: 25vw;
+        color: white;
+        background-color: green;
+        border: none;
+        cursor: pointer;
+    }
+    .btn2:hover{
+        background-color: hwb(120 2% 68%);
+    }
+    .btn2 a{
+        border: none;
+        color: white;
+        text-decoration: none;
+    }
+    .inner-h3{
+        font-size: 17px;
+    }
+    .for-border{
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+    .advn-h{
+        line-height: 32px;
+        height: 18vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .price-day{
+        display: flex;
+        justify-content: space-between;
+    }
+    .advn-part2{
+        background-color: white;
+    }
+    .advn-h {
+        line-height: 32px;
+        height: 18vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .advn-part2{
+        display: none;
+    }
+    .main-cont{
+        background-color: white;
+        padding-top: 10px;
+    }
+    .contact-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        text-align: center;
+        background-color: #2c2424;
+        color: white;
+        border: 7px #b9b1b1 groove;
+    }
+    .popular-tours {
+        background-color: white;
+        height: auto;
+    }
+    .pop-img {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .six{
+        height: auto;
+        background-color: white;
+        width: 100%;
+        padding-top: 40px;
+    }
+    .boxes{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 40px;
+    }
+    .s-bix1{
+        background-color: rgb(225, 148, 4);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 40vh;
+    }
+    .s-bix2{
+        background-color: rgb(90, 67, 24);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 40vh;
+    }
+    .s-bix3{
+        background-color: rgb(70, 67, 67);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 40vh;
+    }
+    .s-bix4{
+        background-color: green;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 40vh;
+    }
+    .seven{
+        height: auto;
+        background-color: white;
+    }
+    .parts{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .parts1{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .img-portion{
+        height: 50vh;
+        width: 100vw;
+    }
+    .img-portion img{
+        height: 100%;
+        width: 100%;
+    }
+    .cont-portion{
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .cont-p{
+        font-size: 20px;
+    }
+    .cont-p2{
+        width: 80%;
+    }
+    .expl{
+        height: 5vh;
+        width: 30vw;
+        background-color: transparent;
+        border: 2px solid gray;
+        margin-top: 15px;
+    }
+    .expl a{
+        text-decoration: none;
+        color: gray;
+        font-size: 18px;
+    }
+    .eight{
+        padding-top: 50px;
+        height: 80vh;
+        width: 100%;
+    }
+    
+    .eight::before{
+        content: "";
+        position: absolute;
+        background: url('/images/bg7.jpg') no-repeat center center/cover;
+        height: 72%;
+        width: 100%;
+        opacity: 0.7;
+        z-index: -1;
+    }
+    .img-parts img{
+        height: 12vh;
+        width: 12vh;
+        border-radius: 80px
+    }
+    .img-parts{
+        display: flex;
+        justify-content: center;
+        width: 30vw;
+        /* margin-left: 8vw; */
+        margin-top: 135px;
+    }
+    .part-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 45vh;
+    }
+    .conts-part{
+        margin-top: 65px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: rgb(255, 255, 255);
+    }
+    .conts-part-p{
+        width: 85%;
+    }
+    .conts-h3{
+        width: 85%;
+        height: 8vh;
+        margin-bottom: 30px;
+        border-bottom: 2px solid rgb(201, 199, 199);
+    }
+    .footer{
+        height: auto;
+        background-color: rgb(33, 30, 24);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .cont-btn a{
+        text-decoration: none;
+        color: green;
+        font-size: 20px;
+        padding: 20px;
+    }
+    .footer-content{
+        color: green;
+        line-height: 41px;
+    }
+    .cont-btn {
+        display: flex;
+        justify-content: space-around;
+    }
+    .social-links{
+        display: flex;
+        justify-content: space-around;
+    }
+    .social-links a{
+        text-decoration: none;
+        font-size: 25px;
+        color: green;
+        padding: 0 0;
+    }
+    
+    
+    
+    
+}
+
+
+
+

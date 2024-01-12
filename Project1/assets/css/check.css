@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: #4c4a4a;
+}
+    /* this is the section of banner */
+
+.logo img{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 40px;
+}
+
+.headers {
+    position: fixed;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(71, 70, 70);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.menus nav ul{
+    display: flex;
+}
+.menus ul li{
+    list-style: none;
+}
+.menus ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    margin: 0 5px;
+}
+/* nav ul li a.active,nav ul li a:hover{
+    background: #1b9bff;
+    color: white;
+    transition: .5s;
+} */
+nav ul li a:focus{
+    background: #1b9bff;
+}
+/* nav ul li a:focus, a.active{
+    background: none;
+} */
+nav ul li a:hover,
+nav ul li a.active{
+    color: white;
+    background: orange;
+}
+nav .menu-btn i{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+.mian {
+    height: 70vh;
+}
+.main-conts {
+    /* height: 55vh; */
+    padding: 45vh 0 0 10vh;
+    line-height: 50px;
+    width: 100vw;
+    text-align: start;
+    color: white;
+    background-color: transparent;
+}
+.main-conts h2{
+    font-size: 8vmin;
+}
+.main-conts a{
+    text-decoration: none;
+    color: white;
+    font-size: 3vmin;
+}
+.banners{
+    height: 70vh;
+    width: 100%;   
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    background: url('/images/company3.jpg') no-repeat center center/cover;
+}
+@media (max-width: 900px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    .logo img {
+        height: 10vh;
+        width: 10vh;
+        border-radius: 47px;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    .menus nav ul{
+        position: fixed;
+        background-color: #4c4a4a;
+        top: -130vh;
+        left: 0%;
+        height: 55vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.4s ease;
+    }
+    nav ul li{
+        margin: 5vh 0;
+    }
+    nav ul li a:focus{
+        background: none;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        color: blue;
+        background: none;
+    }
+    #click:checked ~ ul{
+        top: 12vh;
+    }
+   
+    
+}
+
+
+
+

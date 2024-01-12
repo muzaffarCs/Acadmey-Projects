@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: #4c4a4a;
+}
+    /* this is the section of banner */
+.logo img{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 40px;
+}
+
+.headers {
+    position: fixed;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(71, 70, 70);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.menus nav ul{
+    display: flex;
+}
+.menus ul li{
+    list-style: none;
+}
+.menus ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 9px 15px;
+    margin: 0 5px;
+    border-radius: 8px;
+}
+nav ul li a:focus{
+    background: rgb(3, 96, 13);
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: white;
+    background: rgb(3, 96, 13);
+}
+nav .menu-btn i{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+.mian {
+    height: 70vh;
+}
+.main-conts {
+    /* height: 55vh; */
+    padding: 45vh 0 0 10vh;
+    line-height: 50px;
+    width: 100vw;
+    text-align: start;
+    color: white;
+    background-color: transparent;
+}
+.main-conts h2{
+    font-size: 8vmin;
+}
+.main-conts a{
+    text-decoration: none;
+    color: white;
+    font-size: 3vmin;
+}
+.banners{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    content: "";
+    position: relative;
+    background: url('/images/fimg7.jpg') no-repeat center center/cover;
+    height: 70%;
+    width: 100%;
+    opacity: 0.8;
+}
+@media (max-width: 850px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    .logo img {
+        height: 10vh;
+        width: 10vh;
+        border-radius: 47px;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    .menus nav ul{
+        position: fixed;
+        background-color: #4c4a4a;
+        top: -130vh;
+        left: 0%;
+        height: 55vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.6s ease;
+    }
+    nav ul li{
+        margin: 3vh 0;
+    }
+    nav ul li a{
+        font-size: 3vmin;
+    }
+    nav ul li a:focus{
+        background: none;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        color: blue;
+        background: none;
+    }
+    #click:checked ~ ul{
+        top: 12vh;
+    }
+    
+    
+}
+
+    /* end of banner section */
+
+    /* this is section one */
+.One{
+    height: 85vh;
+    background-color: white;
+}
+.one-contant{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.hr{
+    padding: 11px;
+    border-bottom: 1px solid gray;
+}
+.one-img{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+.one-box{
+    height: 50vh;
+    width: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.one-box img{
+    width: 25vh;
+}
+.one-p{
+    text-align: center;
+    line-height: 25px;
+}
+    /* end of section one */
+
+    /* this is section two */
+.two{
+    background-color: white;
+    height: 60vh;
+}
+.two-boxes{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.t-box {
+    height: 30vh;
+    width: 35%;
+    margin: 0 9px;
+}
+p.two-p {
+    color: #4c4a4a;
+    font-size: 22px;
+}
+    /* end of section two */
+
+
+    /* this is section three */
+.three{
+    color: black;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.three::before{
+    content: "";
+    position: absolute;
+    background: url('/images/bg7.jpg') no-repeat center center/cover;
+    height: 70%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+.three-first{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0;
+}
+.box-t{
+    height: 23vh;
+    width: 25vw;
+}
+.box-t p{
+    color: white;
+}
+.fa-about{
+    font-size: 30px;
+}
+    /* end of section three */
+
+     /* this is section four */
+.fill-box {
+    height: 3vh;
+    background-color: #9b8a27;
+    margin: 15px 0;
+}
+    /* end of section four */
+
+    /* this is section five */
+.five::before{
+    content: "";
+    position: absolute;
+    background: url('/images/fimg7.jpg') no-repeat center center/cover;
+    height: 20%;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+.cont-five {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20vh;
+    padding: 0 200px;
+}
+.five-p{
+    color: white;
+    font-size: 20px;
+}
+    /* end of section five */
+    
+    /* this is section six */
+.six-about{
+    background-color: white;
+    color: black;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.six-first{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0;
+}
+.box-six{
+    height: 23vh;
+    width: 15vw;
+}
+.box-six p{
+    color: black;
+}
+.fa-six i{
+    font-size: 30px;
+    color: #4c4a4a;
+}
+
+
+
+
+/* this is the responsive part of About Us */
+@media(max-width: 850px){
+    .main-conts {
+        height: 55vh;
+        padding: 35vh 0 0 10vh;
+        line-height: 50px;
+        color: white;
+        background-color: transparent;
+    }
+    .banners {
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-align: center;
+        background: url('/images/fimg7.jpg') no-repeat center center/cover;
+    }
+    .one-img {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .two {
+        background-color: white;
+        height: auto;
+        padding-top: 85vh;
+    }
+    .two-boxes {
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .t-box {
+        height: 25vh;
+        width: 75vw;
+        margin: 0 9px;
+    }
+    .three {
+        color: black;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .three::before {
+        content: "";
+        position: absolute;
+        background: url(/images/bg7.jpg) no-repeat center center/cover;
+        height: 176%;
+        width: 100%;
+        opacity: 0.8;
+        z-index: -1;
+    }
+    .three-first {
+        display: flex;
+        justify-content: center;
+        padding: 25px 0;
+        align-items: center;
+        flex-direction: column;
+    }
+    .box-t {
+        height: 25vh;
+        width: 70vw;
+    }
+    .two2 {
+        padding-top: 10vh;
+    }
+    .t-box {
+        height: 25vh;
+        width: 75vw;
+        margin: 31px 9px;
+    }
+    .one-contant {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    .five::before {
+        content: "";
+        position: absolute;
+        background: url(/images/fimg7.jpg) no-repeat center center/cover;
+        height: 13%;
+        width: 100%;
+        opacity: 0.8;
+        z-index: -1;
+    }
+    .cont-five {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 13vh;
+        padding: 0%;
+    }
+    .six-about{
+        display: none;
+    }
+
+}

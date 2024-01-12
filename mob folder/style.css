@@ -1,0 +1,103 @@
+.main{
+	width: 100%;
+	background-image: url('a.png');
+	height: 750px;
+	background-position: center;
+	background-size: cover;
+}
+.navbar{
+    float:left;
+    display:flex;
+    justify-content:center;
+    width:100%;
+    background: gray;
+    text-decoration:none;
+}
+.menu{
+    float:left;
+    display:flex;
+    justify-content:center;   
+    text-decoration:none;
+    
+    
+}
+ul li{
+    font-size:20px;
+    text-align:center;
+    float:left;
+    display:flex;
+    text-decoration:none;
+    list-style:none;
+    justify-content:center;
+    padding: 20px;
+    padding-left:100px;
+}
+ul li a{
+    color: white;
+    font-weight:bold;
+}
+ul{
+    text-decoration:none;
+}
+ul li a:hover{
+    color: black;
+    font-size:30px;
+    pointer:cursor;
+}
+
+pointer:cursor;
+}
+
+img{
+    padpadding-top:100px;
+    
+}
+}}
+
+}
+
+-size:30px;
+    pointer:cursor;
+}
+}
+;
+}
+ion {
+    color: red;
+}
+
+}
+
+
+ pointer:cursor;
+}
+or;
+}}
+
+}
+
+lor: red;
+}
+
+}
+
+
+ pointer:cursor;
+}
+or;
+}}
+
+}
+
+}}
+
+}
+
+or;
+}
+or;
+}}
+
+}
+
+

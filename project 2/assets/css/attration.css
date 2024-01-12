@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: #4c4a4a;
+}
+    /* this is the section of banner */
+.logo img{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 40px;
+}
+
+.headers {
+    position: fixed;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(71, 70, 70);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.menus nav ul{
+    display: flex;
+}
+.menus ul li{
+    list-style: none;
+}
+.menus ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 9px 15px;
+    margin: 0 5px;
+    border-radius: 8px;
+}
+nav ul li a:focus{
+    background: rgb(3, 96, 13);
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: white;
+    background: rgb(3, 96, 13);
+}
+nav .menu-btn i{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+.mian {
+    height: 70vh;
+}
+.main-conts {
+    /* height: 55vh; */
+    padding: 45vh 0 0 10vh;
+    line-height: 50px;
+    width: 100vw;
+    text-align: start;
+    color: white;
+    background-color: transparent;
+}
+.main-conts h2{
+    font-size: 8vmin;
+}
+.main-conts a{
+    text-decoration: none;
+    color: white;
+    font-size: 3vmin;
+}
+.banners{
+    height: 70vh;
+    width: 100%;   
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    background: url('/images/fimg7.jpg') no-repeat center center/cover;
+}
+@media (max-width: 850px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    .logo img {
+        height: 10vh;
+        width: 10vh;
+        border-radius: 47px;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    .menus nav ul{
+        position: fixed;
+        background-color: #4c4a4a;
+        top: -130vh;
+        left: 0%;
+        height: 55vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.6s ease;
+    }
+    nav ul li{
+        margin: 3vh 0;
+    }
+    nav ul li a{
+        font-size: 3vmin;
+    }
+    nav ul li a:focus{
+        background: none;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        color: blue;
+        background: none;
+    }
+    #click:checked ~ ul{
+        top: 12vh;
+    }
+    
+    
+}
+
+    /* end of banner section */
+
+    /* this is the section of adventure */
+.adventure{
+    background-color: rgb(249, 248, 248);
+    color: black;
+    height: 180vh;
+}
+.second-three{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0px 0 0px;
+}
+.last-three{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0px 0 0px;
+}
+.first-three{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-inner img{
+    height: 30vh;   
+    width: 24.8vw;
+    margin: 0 0 15px 0;
+    border-radius: 15px 15px 0px 0px;
+}
+.box-inner{
+    height: 45vh;
+    width: 25vw;
+    background-color: rgba(255, 255, 255, 0.948);
+    box-shadow: 0px 0px 9px 3px rgb(148 146 146);
+    border-radius: 15px;
+}
+.advn-h{
+    line-height: 32px;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+    /* the end of adventure section */
+
+        /* this is section footer */
+.footer{
+    height: 100vh;
+    background-color: black;
+}
+.links {
+    height: 35vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mail-go {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid orange;
+    width: 75%;
+}
+.mail-go a{
+text-decoration: none;
+font-size: 48px;
+color: orange;
+}
+.shorts-menu{
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.link1{
+    height: 45vh;
+    width: 30vh;
+    margin: 0 7px;
+}
+.links-h{
+    color: orange;
+    margin-bottom: 40px;
+}
+.link1 ul li a{
+    text-decoration: none;
+    color: #4c4a4a;
+    font-size: 18px;
+    line-height: 30px;
+}
+.social-links {
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+.social-links a{
+    text-decoration: none;
+    font-size: 80px;
+    color: orange;
+}
+    /* end of footer section */
+.end{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #4c4a4a;
+}
+.end p{
+    color: white;
+}
+
+/* this is the responsive part of About Us */
+@media(max-width: 850px){
+    .main-conts {
+        height: 55vh;
+        padding: 35vh 0 0 10vh;
+        line-height: 50px;
+        color: white;
+        background-color: transparent;
+    }
+    .banners {
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-align: center;
+        background: url(/images/fimg7.jpg) no-repeat center center/cover;
+    }
+    .adventure {
+        background-color: rgb(249, 248, 248);
+        color: black;
+        height: auto;
+    }
+    .first-three {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .second-three {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px 0px 0 0px;
+    }
+    .last-three {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px 0px 0 0px;
+    }
+    .box-inner {
+        height: auto;
+        width: 95vw;
+        background-color: rgba(255, 255, 255, 0.948);
+        box-shadow: 0px 0px 9px 3px rgb(148 146 146);
+        border-radius: 15px;
+        margin-bottom: 2vh;
+    }
+    .box-inner img {
+        height: 30vh;
+        width: 90vw;
+        margin: 0 20px 15px 20px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    p.box-p {
+        padding: 0 25px;
+    }
+    .footer{
+        display: none;
+    }
+    
+
+
+
+
+
+}

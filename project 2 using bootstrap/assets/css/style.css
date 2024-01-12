@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.custom-fonts>li>a{
+    color: white ;
+    font-size: 22px;
+}
+.logo {
+    height: 70px;
+    border-radius: 70px;
+}
+.carousel-item img{
+    height: 70vh;
+}

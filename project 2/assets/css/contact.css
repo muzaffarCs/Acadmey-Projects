@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    color: #4c4a4a;
+}
+    /* this is the section of banner */
+.logo img{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 40px;
+}
+
+.headers {
+    position: fixed;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(71, 70, 70);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.menus nav ul{
+    display: flex;
+}
+.menus ul li{
+    list-style: none;
+}
+.menus ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 9px 15px;
+    margin: 0 5px;
+    border-radius: 8px;
+}
+nav ul li a:focus{
+    background: rgb(3, 96, 13);
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: white;
+    background: rgb(3, 96, 13);
+}
+nav .menu-btn i{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+.mian {
+    height: 70vh;
+}
+.main-conts {
+    /* height: 55vh; */
+    padding: 45vh 0 0 10vh;
+    line-height: 50px;
+    width: 100vw;
+    text-align: start;
+    color: white;
+    background-color: transparent;
+}
+.main-conts h2{
+    font-size: 8vmin;
+}
+.main-conts a{
+    text-decoration: none;
+    color: white;
+    font-size: 3vmin;
+}
+.banners{
+    height: 70vh;
+    width: 100%;   
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    background: url('/images/company3.jpg') no-repeat center center/cover;
+}
+@media (max-width: 850px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    .logo img {
+        height: 10vh;
+        width: 10vh;
+        border-radius: 47px;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    .menus nav ul{
+        position: fixed;
+        background-color: #4c4a4a;
+        top: -130vh;
+        left: 0%;
+        height: 55vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.6s ease;
+    }
+    nav ul li{
+        margin: 3vh 0;
+    }
+    nav ul li a{
+        font-size: 3vmin;
+    }
+    nav ul li a:focus{
+        background: none;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        color: blue;
+        background: none;
+    }
+    #click:checked ~ ul{
+        top: 12vh;
+    }
+   
+    
+}
+    /* end of banner section */
+    
+    /* this is M section one */
+.M-One{
+    height: auto;
+    background-color: white;
+}
+.M-one-contant{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inner-content{
+    font-size: 24px;
+}
+.hr{
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+}
+.contact-conts {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+}
+.b1 {
+    width: 30%;
+    padding: 0 15px;
+}
+p.box-p {
+    height: 15vh;
+    background-color: rgb(34, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px groove rgb(174, 173, 173);
+    color: white;
+    font-size: 30px;
+}
+p.box-p2 {
+    height: 15vh;
+    background-color: rgb(62, 61, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px groove rgb(174, 173, 173);
+    color: white;
+    font-size: 30px;
+}
+p.box-p3 {
+    height: 15vh;
+    background-color: rgb(34, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px groove rgb(174, 173, 173);
+    color: white;
+    font-size: 30px;
+}
+
+        /* end of section one */
+
+        /* this is second section */
+.second{
+    height: 110vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    background-color: #b1a3a3;
+    padding: 50px 0;
+}
+.cont-form {
+    grid-template-columns: 30% 70%;
+    background-color: #d7d2d2;
+    height: 100vh;
+}
+.label {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #d7d2d2;
+    border: 10px groove gray;
+    justify-content: center;
+    width: 46vw;
+}
+.label label {
+    color: #6c6a6a;
+    width: 26vw;
+    height: 4vh;
+    display: flex;
+    /* justify-content: end; */
+    align-items: center;
+    font-size: 20px;
+    /* padding: 0 384px 0 0; */
+}
+input[type="text"] {
+    height: 4vh;
+    width: 26vw;
+    background: transparent;
+    /* border: none; */
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid #6c6a6a;
+    font-size: 18px;
+}
+input[type="email"] {
+    height: 4vh;
+    width: 26vw;
+    background: transparent;
+    /* border: none; */
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid #6c6a6a;
+    font-size: 18px;
+}
+textarea {
+    height: 72px;
+    width: 26vw;
+    background: transparent;
+    /* border: none; */
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid #6c6a6a;
+    font-size: 18px;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+input[type="email"]:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+button.b-q {
+height: 7vh;
+width: 16vw;
+background-color: transparent;
+border: 3px solid gray;
+border-radius: 8px;
+font-size: 20px;
+color: #4e4c4c;
+cursor: pointer;
+}
+iframe {
+    width: 600px;
+    padding: 0 0px 0 60px;
+}
+    /* this is gallery footer section */
+.m-footer {
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(29, 28, 28);
+}
+.logo-end {
+    width: 30vh;
+    width: 25%;
+}
+.logo-end img {
+    width: 25vh;
+}
+.l-e-p{
+    color: white;
+}
+.links{
+    width: 25%;
+}
+.links-h{
+    color: white;
+    padding-bottom: 30px;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 29px;
+}
+.contact{
+    width: 25%;
+}
+.contact ul li{
+    list-style: none;
+}
+.contact ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 29px;
+}
+    /* end of footer */
+.end{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #4c4a4a;
+}
+.end p{
+    color: white;
+}
+
+/* it is the responsive part */
+@media(max-width: 850px){
+    .main-conts {
+        height: 55vh;
+        padding: 35vh 0 0 10vh;
+        line-height: 50px;
+        color: white;
+        background-color: transparent;
+    }
+    .banners{
+        height: 50vh;
+        width: 100%;   
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-align: center;
+        background: url('/images/company3.jpg') no-repeat center center/cover;
+    }
+    .contact-conts {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+    }
+    .b1 {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    p.box-p {
+        width: 70vw;
+        height: 10vh;
+        background-color: rgb(34, 32, 32);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 6px groove rgb(174, 173, 173);
+        color: white;
+        font-size: 30px;
+    }
+    .p-box {
+        color: #4c4a4a;
+        width: 90vw;
+        padding-bottom: 3vh;
+    }
+    p.box-p2 {
+        width: 70vw;
+        height: 10vh;
+        background-color: rgb(62, 61, 61);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 6px groove rgb(174, 173, 173);
+        color: white;
+        font-size: 30px;
+    }
+    p.box-p3 {
+        width: 70vw;
+        height: 10vh;
+        background-color: rgb(34, 32, 32);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 6px groove rgb(174, 173, 173);
+        color: white;
+        font-size: 30px;
+    }
+    .second {
+        height: auto;
+        width: 100%;
+        display: flex;
+        background-color: #b1a3a3;
+        flex-direction: column;
+    }
+    .cont-form {
+        grid-template-columns: 30% 70%;
+        background-color: #d7d2d2;
+        height: auto;
+    }
+    .label {
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #d7d2d2;
+        border: 10px groove gray;
+        justify-content: center;
+        width: auto;
+    }
+    label {
+        color: #6c6a6a;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+    }
+    input[type="text"]{
+        height: auto;
+        width: auto;
+        background: transparent;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 2px solid #6c6a6a;
+        font-size: 18px;
+    }
+    input[type="email"]{
+        height: auto;
+        width: auto;
+        background: transparent;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 2px solid #6c6a6a;
+        font-size: 18px;
+    }
+    textarea{
+        height: auto;
+        width: auto;
+        background: transparent;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 2px solid #6c6a6a;
+        font-size: 18px;
+    }
+    button.b-q {
+        height: 5vh;
+        width: 37vw;
+        background-color: transparent;
+        border: 3px solid gray;
+        border-radius: 8px;
+        font-size: 16px;
+        color: #4e4c4c;
+        cursor: pointer;
+        margin-bottom: 2vh;
+    }    
+    iframe {
+        height: 40vh;
+        width: 90vw;
+        padding: 15px 0px 0 41px;
+    }
+    .m-footer {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(29, 28, 28);
+        flex-direction: column;
+    }
+    .contact {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .links {
+        width: auto;
+        padding-bottom: 4vh;
+    }
+    .logo-end {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4vh;
+    }
+    
+}

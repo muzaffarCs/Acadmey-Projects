@@ -1,0 +1,15 @@
+.logo{
+    height: 70px;
+}
+/* .nav-links ul li a{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+} */
+.banner-img{
+    height: 90vh;
+}
+.card-img{
+    height: 30vh;
+    width: 20rem;
+}

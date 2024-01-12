@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        section{border: 2px solid black;
+        background-color: gray;
+        width:80%; }
+        h2{ padding-left: 30%; }
+        .submit{
+            text-align: center;  }
+            .center{ padding-left: 8%;}              
+    </style>
+    
+    <title>Form practice</title>
+</head>
+<body> 
+    <h2>Admission form</h2>
+    <section>
+    <from >
+        <div class="center">
+        <br><br>
+        <label>Name:</label><br>
+        <input type ="text" name ="Name" placeholder ="enter your name" required checked><br><br>
+               <label>F.Name:</label><br>
+        <input type ="text" f.name ="Name" placeholder ="enter your f.name" required><br><br>
+               <label>Email:</label><br>
+        <input type ="email" name ="email" placeholder ="eg.xyz@gmail.com" required><br><br>
+               <label>Date of birth:</label><br>
+        <input type ="date" name ="Date of birth" placeholder ="dd/mm/yyyy" required><br><br>
+               <label for="city">City:</label><br>
+               <select id="city" name="city">
+    <option value="Skardu">Skardu</option>
+    <option value="Gilgit">Gilgit</option>
+    <option value="Lahore">Lahore</option>
+    <option value="Islamabad">Islamabad</option> </select><br><br>
+   
+   <label>Gender:</label><br><br>
+       <input type="radio" name="gender" value="male" chacked>male 
+       <input type="radio" name="gender" value="female">female 
+       <input type="radio" name="gender" value="other">other<br><br>
+       <label>Briefly describe your previous education:</label><br><br>
+       <textarea name="description" row="30" cols="35"></textarea>
+       <br><br>
+       <p>Make sure: </p>
+       <label>
+           This form is for only under nineteen:   </label>
+           <br>
+           <label>I agree</label>
+           <input type ="radio" name="checked" value="agree">
+           &nbsp &nbsp
+           <label>I disagree </label>
+           <input type ="radio" name="checked" value="disagree">
+           <br><br>
+           <input type="password" placeholder="conform your password">
+           <br><br>
+           <button class="sign">sign in</button>
+       </div>
+       <div class="submit">
+       <input type="submit" value ="Finish and save">
+        </div>
+    </from>
+    </section>
+</body>
+</html>
